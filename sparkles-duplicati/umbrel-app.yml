@@ -2,7 +2,7 @@ manifestVersion: 1
 id: sparkles-duplicati
 name: Duplicati
 tagline: Zero trust, fully encrypted backup
-icon: https://static-00.iconduck.com/assets.00/duplicati-icon-256x233-uygspk6z.png
+icon: https://raw.githubusercontent.com/joaovictor-local/umbrel-sparkles-app-store/master/sparkles-duplicati/duplicati.png
 category: files
 version: "2.0.8"
 port: 8200
