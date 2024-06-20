@@ -1,23 +1,23 @@
 manifestVersion: 1
 id: sparkles-duplicati
 name: Duplicati
-tagline: Replace this tagline with your app's tagline
-icon: https://svgur.com/i/mvA.svg
-category: Development
-version: "1.0.0"
+tagline: Zero trust, fully encrypted backup
+icon: https://static-00.iconduck.com/assets.00/duplicati-icon-256x233-uygspk6z.png
+category: 
+version: "2.0.8"
 port: 8200
 description: >-
-  Add your app's description here.
+  Pick your own backend and store encrypted backups of your files anywhere on or offline. For MacOS, Windows and Linux.
 
 
-  You can also add newlines!
+  Backup files and folders with your favourite applications. Duplicati works with standard protocols like FTP, SSH, and WebDAV, as well as a wide range of popular services.
 
-developer: Umbrel
-website: https://umbrel.com
-submitter: Umbrel
-submission: https://github.com/getumbrel/umbrel-duplicati-app
-repo: https://github.com/getumbrel/umbrel-duplicati-app
-support: https://github.com/getumbrel/umbrel-duplicati-app/issues
+developer: duplicati
+website: https://duplicati.com/
+submitter: João Victor
+submission: https://github.com/getumbrel/umbrel-apps
+repo: https://github.com/duplicati/duplicati
+support: https://github.com/duplicati/duplicati/issues
 gallery:
   - https://i.imgur.com/yyVG0Jb.jpeg
   - https://i.imgur.com/yyVG0Jb.jpeg
