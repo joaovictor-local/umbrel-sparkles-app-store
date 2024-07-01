@@ -17,4 +17,4 @@ services:
       - ${APP_DATA_DIR}/data/config:/config
       - ${APP_DATA_DIR}/data/backup:/backups
       - ${APP_DATA_DIR}/data/source:/source
-    
+      - ${UMBREL_ROOT}/data/storage:/umbrel-storage
