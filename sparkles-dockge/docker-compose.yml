@@ -13,7 +13,7 @@ services:
     stop_grace_period: 1m
     restart: on-failure
     environment:
-      DOCKER_ENSURE_BRIDGE: "dind0:10.32.0.1/16"
+      DOCKER_ENSURE_BRIDGE: "dind0:10.33.0.1/16"
     entrypoint: /entrypoint.sh
     command: >
       dockerd
@@ -30,7 +30,9 @@ services:
     image: louislam/dockge:1.4.2@sha256:ec889251baff476366783bc4a092aaa08c601f377537a0f30fb922754edcd9b7
     restart: on-failure
     volumes:
-      - ${APP_DATA_DIR}/data/dockge/stacks:${APP_DATA_DIR}/data/dockge/stacks
       - ${APP_DATA_DIR}/data/docker:/var/run
+      - ${APP_DATA_DIR}/data/dockge/data:/app/data
+      - ${APP_DATA_DIR}/data/dockge/stacks:/opt/stacks
+
     environment:
-      DOCKGE_STACKS_DIR: ${APP_DATA_DIR}/data/dockge/stacks
+      DOCKGE_STACKS_DIR: /opt/stacks
