@@ -10,8 +10,6 @@ services:
     image: ghcr.io/matt8707/ha-fusion
     restart: on-failure
     network_mode: bridge
-    ports:
-      - 5050:5050
     environment:
       - HASS_URL=http://${DEVICE_DOMAIN_NAME}:8123
     volumes:
