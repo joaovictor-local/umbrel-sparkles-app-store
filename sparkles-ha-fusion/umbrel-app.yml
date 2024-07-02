@@ -5,7 +5,7 @@ tagline: A modern, easy-to-use and performant custom Home Assistant dashboard
 icon: https://github.com/matt8707/addon-ha-fusion/blob/main/icon.png?raw=true
 category: automation
 version: "2024.6.1"
-port: 5050
+port: 8124
 description: >-
   A modern, easy-to-use and performant custom Home Assistant dashboard
 
