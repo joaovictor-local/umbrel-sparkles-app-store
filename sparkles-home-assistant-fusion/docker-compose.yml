@@ -3,8 +3,8 @@ version: "3.7"
 
 services:
   # The app proxy is always needed and tells Umbrel how to route traffic to your app.
-  app_proxy:
-    environment:
+  # app_proxy:
+    # environment:
       # For apps in the official app store:
       # <app-id>_<web-container-name>_1
       # e.g. 'btc-rpc-explorer_web_1'
@@ -12,11 +12,11 @@ services:
       # <app-store-id>-<app-id>_<web-container-name>_1
       # e.g. 'sparkles-btc-rpc-explorer_web_1'
       # Note that the '_1' at the end is needed
-      APP_HOST: sparkles-home-assistant-fusion_web_1
+      # APP_HOST: sparkles-home-assistant-fusion_web_1
       # The port your app's web server is listening on
       # Note: This does not need to be the same port as in the umbrel-app.yml
       # This port is only accessible from within the Docker network
-      APP_PORT: 5050
+      # APP_PORT: 5050
       # If you want to disable the app proxy, you can set this to 'false'
       # Disabling the app proxy will make your app accessible without the Umbrel authentication
       #PROXY_AUTH_ADD: "true"
@@ -32,13 +32,13 @@ services:
     #user: "1000:1000"
     restart: on-failure
     stop_grace_period: 1m
-    network_mode: host
-    # ports:
+    network_mode: bridge
+    ports:
       # You do not need to expose the port that your app's web server is listening on if you're using the app_proxy service.
       # This is handled by the APP_HOST and APP_PORT environment variables in the service above.
       #
       # If you need to expose additional ports, you can do so like this, replacing <port> with the port number:
-      #- <port>:<port>
+      - 5023:5050
     volumes:
       # Uncomment to mount your data directories inside
       # the Docker container for storing persistent data
