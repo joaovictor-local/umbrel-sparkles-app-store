@@ -1,5 +1,5 @@
 manifestVersion: 1
-id: sparkles-ha-fusion
+id: sparkles-fusion
 name: Home Assistant Fusion
 tagline: A modern, easy-to-use and performant custom Home Assistant dashboard
 icon: https://github.com/matt8707/addon-ha-fusion/blob/main/icon.png?raw=true
