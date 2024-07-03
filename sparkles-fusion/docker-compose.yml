@@ -11,7 +11,7 @@ services:
     restart: on-failure
     network_mode: bridge
     environment:
-      - HASS_URL=http://${DEVICE_DOMAIN_NAME}:8123
+      TZ: Europe/Stockholm
+      HASS_URL: http://${DEVICE_DOMAIN_NAME}:8123
     volumes:
-      - /etc/localtime:/etc/localtime:ro
       - ${APP_DATA_DIR}/data:/app/data
