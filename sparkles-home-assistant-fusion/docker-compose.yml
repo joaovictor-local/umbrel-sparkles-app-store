@@ -11,4 +11,4 @@ services:
     volumes:
       - ${APP_DATA_DIR}/data:/app/data
     environment:
-      HASS_URL: http://<your-umbrel-ip>:8123
+      HASS_URL: http://${HOME_ASSISTANT_IP}:8123
