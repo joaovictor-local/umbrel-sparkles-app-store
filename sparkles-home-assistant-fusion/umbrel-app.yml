@@ -15,10 +15,10 @@ id: sparkles-home-assistant-fusion
 #disabled: false
 
 # This is the name of your App. It will show up in the App Store as well as on the home screen of Umbrel.
-name: My Cool App
+name: Home Assistant Fusion UI
 
 # The tagline should describe your app in one sentence. Do not use more than 100 characters.
-tagline: The coolest app ever
+tagline: A modern, easy-to-use and performant custom Home Assistant dashboard
 
 # This is the icon displayed in the App Store as well as on the home screen.
 # The icon is only needed for community App Stores. For the official Umbrel App Store, the icon will be uploaded via the Pull Request and stored
@@ -26,11 +26,11 @@ tagline: The coolest app ever
 icon: https://raw.githubusercontent.com/matt8707/addon-ha-fusion/main/icon.png
 
 # The category should be one of the following: "files", "bitcoin", "media", "networking", "social", "automation", "finance", "ai" or "developer".
-category: files
+category: automation
 
 # The version of your app.
 # The version should correspond to the version of the upstream application.
-version: "1.0.0"
+version: "2024.6.1"
 
 # The port your app is reachable from a webbrowser. This should be a number between 1024 and 65535.
 # Note: This port does not need to be the same as the APP_PORT in the docker-compose.yml.
@@ -39,17 +39,13 @@ port: 5023
 
 # A description of your app. This will be shown in the App Store.
 # Note: To separate paragraphs, use two empty lines instead of only one.
-description: >-
-  This is the best app you have ever seen. It does everything you ever wanted and more.
-
-
-  It also supports new lines.
+description: ""
 
 # The developer of the app. This is not necessarily the submitter but the actual developer of the app.
-developer: John Doe
+developer: Mattias Persson
 
 # The website of the app. This should be the official website of the app.
-website: http://example.com
+website: https://github.com/matt8707/ha-fusion
 
 # The submitter of the app. This is the person who submits the app to the App Store (probably you).
 submitter: João Victor
@@ -61,7 +57,7 @@ submission: https://github.com/<user>/<repo>/commit/<full-commit-sha>
 #repo: https://github.com/<user>/<repo>
 
 # The support URL. This should be a link to the support page of the app.
-support: https://github.com/<user>/<repo>/discussions
+support: https://github.com/matt8707/ha-fusion/discussions
 
 # The gallery is an array of filenames (Official App Store) or URLs (Community App Stores) to images that will be shown in the App Store.
 # Ideally the size of the images should be 1600x1000 (1.6:1) pixels.
